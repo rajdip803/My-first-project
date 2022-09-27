@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+:root{
+    --navbar-height: 20px;
+}
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+#navbar::before{
+    position: relative;
+    content: "";
+    background-color: rgb(202, 8, 8);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.h-primary{
+    position: relative;
+    content: "";
+    color: aqua;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    
+}
+#navbar ul li a:hover{
+    color: coral;
+    background-color: white;
+}
+#home {
+    content:"";
+    display: flex;
+    flex-direction: column;
+    padding: 3px 20px;
+    justify-items: center;
+    align-items: center;
+    z-index: 1;
+}
+[type='input']{
+    position: relative;
+    border: 4px burlywood;
+    border-radius: 4px;
+    text-decoration-color: solid wheat;
+    background-color: aliceblue;
+    justify-content:center ;
+    position:absolute;
+    text-size-adjust: 10px;
+    top: 100px;
+    left: 200px;
+}
+.container{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  padding: 50px 8px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.gallery img{
+    width: 100%;
+}
+.containerdate{
+    color: aliceblue;
+    size: 20px;
+    text-decoration-color: aliceblue;
+    padding: 15px 50px;
+}
+.About{
+    size: 10rem;
+    text-decoration: none;
+    background-color: red;
+    text-size-adjust: 4px;
+    text-decoration-color: aliceblue;
+    z-index: -1;
+}
+body{
+    background-color: black;
+    z-index: -2;
+}

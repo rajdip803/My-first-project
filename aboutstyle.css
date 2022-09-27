@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.aboutdetails{
+    font-size-adjust: 10px;
+    content: "";
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
